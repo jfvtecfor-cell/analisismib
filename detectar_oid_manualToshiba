@@ -1,0 +1,6 @@
+chmod +x detectar_oids.sh
+./detectar_oids.sh <IP> [community]
+
+Ejemplo: ./detectar_oids.sh 192.168.1.50 public
+
+claude
