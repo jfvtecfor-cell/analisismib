@@ -5,3 +5,10 @@
 ./scan_hp_printer.sh 192.168.1.100 mi_comunidad_snmp
 
 Mistral
+
+requisitos 
+# Debian/Ubuntu:
+sudo apt update && sudo apt install snmp
+
+# RHEL/CentOS:
+sudo yum install net-snmp
