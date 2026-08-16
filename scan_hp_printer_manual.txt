@@ -1,4 +1,7 @@
 # Uso básico (comunidad SNMP por defecto: "public")
+
+chmod +x scan_hp_printer.sh
+
 ./scan_hp_printer.sh <IP_DE_LA_IMPRESORA>
 
 # Ejemplo con comunidad personalizada
