@@ -1,0 +1,7 @@
+# Uso básico (comunidad SNMP por defecto: "public")
+./scan_hp_printer.sh <IP_DE_LA_IMPRESORA>
+
+# Ejemplo con comunidad personalizada
+./scan_hp_printer.sh 192.168.1.100 mi_comunidad_snmp
+
+Mistral
