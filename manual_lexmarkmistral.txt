@@ -1,0 +1,9 @@
+chmod +x scan_lexmark.sh
+
+# 1. Instala net-snmp (si no lo tienes)
+pkg install net-snmp  # Termux
+# o
+sudo apt install snmp  # Debian/Ubuntu
+
+# 2. Ejecuta el script
+./scan_lexmark.sh 192.168.1.100 public
