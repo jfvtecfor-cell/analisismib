@@ -1,0 +1,43 @@
+ Instrucciones rápidas (dos opciones), comprobaciones y recomendaciones:
+
+1) Crear el archivo localmente (recomendado)
+- Opción interactiva (editor):
+  - nano lexmar_copilot.sh
+  - Pega el contenido, guarda (Ctrl+O) y cierra (Ctrl+X)
+- Opción here-doc (pegar todo y luego EOF):
+  - cat > lexmar_copilot.sh <<'EOF'
+  - [pega aquí todo el contenido]
+  - EOF
+
+  Uso de 'EOF' entre comillas simples evita expansión accidental de variables.
+
+2) Hacerlo ejecutable
+- chmod +x lexmar_copilot.sh
+
+3) Probar
+- ./lexmar_copilot.sh --help
+- ./lexmar_copilot.sh -H <IP_de_la_impresora> --oids
+- ./lexmar_copilot.sh -H <IP> --json | jq .
+
+4) Dependencias y comprobaciones
+- Necesitas net-snmp (snmpwalk, snmpget). Instalar:
+  - Debian/Ubuntu: sudo apt install snmp
+  - RHEL/Fedora: sudo dnf install net-snmp-utils
+- Comprobar versión de bash: bash --version (el script usa arrays y features de bash)
+- Si pegas desde Windows, conviértelo a LF: dos2unix lexmar_copilot.sh
+
+5) Subirlo al repo (si quieres agregarlo y hacer push)
+- git checkout -b lexmar_copilot
+- git add lexmar_copilot.sh
+- git commit -m "Add lexmar_copilot.sh — improved Lexmark SNMP script"
+- git push origin lexmar_copilot
+(Después puedes abrir PR desde GitHub.)
+
+6) Notas útiles
+- Si usas SNMPv3 necesitarás pasar credenciales adicionales a snmpwalk/snmpget; el script acepta -v 3 pero no maneja los parámetros v3 automáticamente.
+- Si obtienes timeouts, intenta aumentar --timeout o comprobar conectividad/puerto UDP 161.
+- Para debugging añade --debug.
+
+Si quieres que yo suba el archivo al repositorio en una rama (yo puedo crear la rama y commitear), confírmame:
+- el nombre de la rama a usar, y
+- si quieres que el archivo se llame lexmar_copilot.sh exactamente.
